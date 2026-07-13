@@ -215,12 +215,16 @@ button {
   gap: 4px;
   padding: 10px;
   margin-inline-start: auto;
+  color:#ffffff;
 }
 .burger span {
   background: #fff;
+  /* color:#14947e; */
+  min-height: 2px;
+  min-width: 20px;
 }
 .header.is-scrolled .burger span {
-  background: var(--green-800);
+  background: var(--cream);
 }
 .burger.is-open span:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
@@ -459,6 +463,7 @@ button {
 @media (max-width: 1024px) {
   .burger {
     display: flex;
+    z-index: 50;
   }
 
   .nav {
